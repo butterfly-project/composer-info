@@ -1,0 +1,22 @@
+{
+    "name": "butterfly/composer-info",
+    "type": "library",
+    "description": "Butterfly PHP. ComposerInfo Component",
+    "keywords": ["Composer", "Info"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marat Fakhertdinov",
+            "email": "marat.fakhertdinov@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Butterfly\\Component\\ComposerInfo\\": "src/",
+            "Butterfly\\Component\\ComposerInfo\\Tests\\": "tests/"
+        }
+    }
+}
