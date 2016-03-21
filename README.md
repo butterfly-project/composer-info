@@ -1,1 +1,4 @@
-# composer-info
+config
+======
+
+Butterfly PHP. ComposerInfo Component
