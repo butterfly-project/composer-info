@@ -36,6 +36,47 @@ class PackageInfo
     /**
      * @return string
      */
+    public function getLicense()
+    {
+        if(!\key_exists('license', $this->data))
+            return null;
+        
+        return $this->data['license'];
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription()
+    {
+        if(!\key_exists('description', $this->data))
+            return null;
+        
+        return $this->data['description'];
+    }
+
+    /**
+     * @return string
+     */
+    public function getHomepage()
+    {
+        if(!\key_exists('homepage', $this->data))
+            return null;
+        
+        return $this->data['homepage'];
+    }
+
+    /**
+     * @return object
+     */
+    public function getRawData()
+    {   
+        return $this->data;
+    }
+
+    /**
+     * @return string
+     */
     public function getRawVersion()
     {
         return $this->data['version'];
