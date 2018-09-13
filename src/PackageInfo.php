@@ -38,8 +38,9 @@ class PackageInfo
      */
     public function getLicense()
     {
-        if(!\key_exists('license', $this->data))
+        if(!\key_exists('license', $this->data)) {
             return null;
+        }
         
         return $this->data['license'];
     }
@@ -49,8 +50,9 @@ class PackageInfo
      */
     public function getDescription()
     {
-        if(!\key_exists('description', $this->data))
+        if(!\key_exists('description', $this->data)) {
             return null;
+        }
         
         return $this->data['description'];
     }
@@ -60,14 +62,15 @@ class PackageInfo
      */
     public function getHomepage()
     {
-        if(!\key_exists('homepage', $this->data))
+        if(!\key_exists('homepage', $this->data)) {
             return null;
+        }
         
         return $this->data['homepage'];
     }
 
     /**
-     * @return object
+     * @return array
      */
     public function getRawData()
     {   
